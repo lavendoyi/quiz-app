@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Which Pororo Character Are You?</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-image: url('background.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      color: rgb(50, 82, 185);
+    }
+
+    .question, .result {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    img.character-img {
+      display: block;
+      margin: 10px auto;
+      max-width: 150px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Which Pororo Character Are You?</h1>
+
+  <form id="quizForm">
+    <div class="question">
+      <p>1. What’s your favorite time of day?</p>
+      <label><input type="radio" name="q1" value="morning" required> Morning</label><br>
+      <label><input type="radio" name="q1" value="afternoon"> Afternoon</label><br>
+      <label><input type="radio" name="q1" value="evening"> Evening</label><br>
+      <label><input type="radio" name="q1" value="night"> Night</label>
+    </div>
+
+    <div class="question">
+      <p>2. Pick a snack:</p>
+      <label><input type="radio" name="q2" value="banana" required> Banana</label><br>
+      <label><input type="radio" name="q2" value="icecream"> Ice Cream</label><br>
+      <label><input type="radio" name="q2" value="sandwich"> Sandwich</label><br>
+      <label><input type="radio" name="q2" value="cookies"> Cookies</label>
+    </div>
+
+    <div class="question">
+      <p>3. Ideal weekend activity?</p>
+      <label><input type="radio" name="q3" value="play" required> Playing outside</label><br>
+      <label><input type="radio" name="q3" value="read"> Reading books</label><br>
+      <label><input type="radio" name="q3" value="video games"> Video games</label><br>
+      <label><input type="radio" name="q3" value="cook"> Cooking</label>
+    </div>
+
+    <div class="question">
+      <p>4. Choose a pet:</p>
+      <label><input type="radio" name="q4" value="dog" required> Dog</label><br>
+      <label><input type="radio" name="q4" value="cat"> Cat</label><br>
+      <label><input type="radio" name="q4" value="bird"> Penguin</label><br>
+      <label><input type="radio" name="q4" value="robot"> Robot pet</label>
+    </div>
+
+    <div class="question">
+      <p>5. What’s your superpower?</p>
+      <label><input type="radio" name="q5" value="intelligence" required> Intelligence</label><br>
+      <label><input type="radio" name="q5" value="flight"> Flight</label><br>
+      <label><input type="radio" name="q5" value="super speed"> Super Speed</label><br>
+      <label><input type="radio" name="q5" value="talk to animals"> Talking to Animals</label>
+    </div>
+
+    <button type="submit">See My Character!</button>
+  </form>
+
+  <div id="result" class="result" style="display:none;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
